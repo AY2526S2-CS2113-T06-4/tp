@@ -9,7 +9,8 @@ public class RLAD {
         ArrayList<Double> income = new ArrayList<>();
         ArrayList<Double> expenses = new ArrayList<>();
         ArrayList<String> itemType = new ArrayList<>();
+        ArrayList<String> itemDescription = new ArrayList<>();
         Logo.printRLAD();
-        addTransaction userTransaction = new addTransaction(income, expenses, itemType, in);
+        addTransaction userTransaction = new addTransaction(income, expenses, itemType, itemDescription, in);
     }
 }

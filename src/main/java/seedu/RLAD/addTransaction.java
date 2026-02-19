@@ -1,12 +1,13 @@
 package seedu.RLAD;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class addTransaction {
     private static int expNum = 1;
 
-    public addTransaction (ArrayList<Double> income, ArrayList<Double> expenses, ArrayList<String> itemType, Scanner scanner) {
+    public addTransaction (ArrayList<Double> income, ArrayList<Double> expenses, ArrayList<String> itemType, ArrayList<String> itemDescription, Scanner scanner) {
         System.out.print("Monthly income: $");
         double incomeValue = Double.parseDouble(scanner.nextLine());
         income.add(incomeValue);
@@ -22,6 +23,9 @@ public class addTransaction {
             System.out.print("Item type #" + expNum + ": ");
             String itemTypeValue = scanner.nextLine();
             itemType.add(itemTypeValue); //Adds item type to the back of the category array
+            System.out.print("Item description #" + expNum + ": ");
+            String itemDescriptionValue = scanner.nextLine();
+            itemDescription.add(itemDescriptionValue);
             expNum++;
         }
     }
