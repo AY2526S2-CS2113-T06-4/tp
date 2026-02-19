@@ -22,7 +22,29 @@ public class Transaction {
         this.description = description;
     }
 
-    public String getHashId() { return hashId; }
+    public String getHashId() {
+        return hashId;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 
     @Override
     public String toString() {
